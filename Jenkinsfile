@@ -1,6 +1,6 @@
 node('osx') {
     stage ('Checkout') {
-        git url: https://github.com/wei-lee/helloworld-ios.git
+        git url: 'https://github.com/wei-lee/helloworld-ios.git'
     }
     
     stage('Cocoapods') {
