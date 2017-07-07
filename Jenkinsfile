@@ -10,7 +10,7 @@ node('osx') {
     stage('Build') {
         xcodeBuild(
         cleanBeforeBuild: true,
-        src: 'helloworld-ios',
+        src: '.',
         schema: 'helloworld-ios-app',
         workspace: 'helloworld-ios-app',
         buildDir: 'build',
