@@ -35,11 +35,11 @@ node('osx') {
         bundleId: 'com.feedhenry.helloworld-ios-app',
         verify: true,
         ipaName: 'myapp',
-        appPath: 'helloworld-ios/build/Release-iphoneos/helloworld-ios-app.app'
+        appPath: 'build/Release-iphoneos/helloworld-ios-app.app'
       )
   }
   
   stage('Archive') {
-      archive 'helloworld-ios/build/Release-iphoneos/helloworld-ios-app.ipa'
+      archive 'build/Release-iphoneos/helloworld-ios-app.ipa'
   }
 }
