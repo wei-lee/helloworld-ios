@@ -4,7 +4,7 @@ node('osx') {
     }
     
     stage('Cocoapods') {
-        sh '(cd helloworld-ios; pod install)'
+        sh 'pod install'
     }
     
     stage('Build') {
